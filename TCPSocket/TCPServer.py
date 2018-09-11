@@ -1,7 +1,7 @@
 from socket import *
 serverPort = 12000
 serverSocket = socket(AF_INET,SOCK_STREAM)
-serverSocket.bind(('',serverPort))
+serverSocket.bind(('0.0.0.0',serverPort))
 serverSocket.listen(1)
 print('The server is ready to receive')
 while 1:
